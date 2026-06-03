@@ -1,6 +1,6 @@
 import { Reveal } from "./Reveal";
 import { Download, FileText } from "lucide-react";
-import cv from "@/assets/cv.pdf.asset.json";
+import cv from "@/assets/cv.pdf?url";
 
 export function Resume() {
   return (
@@ -28,7 +28,7 @@ export function Resume() {
 
         <Reveal delay={0.2}>
           <a
-            href={cv.url}
+            href={cv}
             download="Emmanuel_Chiboy_CV.pdf"
             className="mt-8 inline-flex items-center gap-2 rounded-lg bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground shadow-[0_10px_40px_-10px_oklch(0.62_0.21_286/0.7)] transition-transform hover:scale-[1.03]"
           >
