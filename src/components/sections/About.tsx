@@ -1,5 +1,5 @@
 import { Reveal } from "./Reveal";
-import emmanuel from "@/assets/emmanuel.png.asset.json";
+import emmanuel from "@/assets/emmanuel.png";
 
 const skills = ["HTML5", "CSS3", "JavaScript", "React", "Canva", "Responsive Design", "Git", "Vercel"];
 const stats = [
@@ -14,7 +14,7 @@ export function About() {
       <div className="mx-auto grid max-w-6xl gap-12 md:grid-cols-[320px_1fr] md:gap-16">
         <Reveal>
           <div className="overflow-hidden rounded-2xl border-2 border-primary/40">
-            <img src={emmanuel.url} alt="Emmanuel Chiboy portrait" className="aspect-[4/5] w-full object-cover" />
+            <img src={emmanuel} alt="Emmanuel Chiboy portrait" className="aspect-[4/5] w-full object-cover" />
           </div>
           <div className="mt-4">
             <p className="font-display text-xl font-bold text-white">Emmanuel Chiboy</p>

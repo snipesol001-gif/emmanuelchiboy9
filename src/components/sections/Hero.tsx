@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowDown, Download } from "lucide-react";
-import emmanuel from "@/assets/emmanuel.png.asset.json";
-import cv from "@/assets/cv.pdf.asset.json";
+import emmanuel from "@/assets/emmanuel.png";
+import cv from "@/assets/cv.pdf?url";
 
 const phrases = ["Frontend Web Developer", "UI Designer", "I Build Websites That Work"];
 
@@ -63,7 +63,7 @@ export function Hero() {
           className="glow-ring mb-8 rounded-full"
         >
           <img
-            src={emmanuel.url}
+            src={emmanuel}
             alt="Emmanuel Chiboy headshot"
             className="h-32 w-32 rounded-full object-cover ring-4 ring-background md:h-40 md:w-40"
           />
@@ -103,7 +103,7 @@ export function Hero() {
             See My Services
           </a>
           <a
-            href={cv.url}
+            href={cv}
             download="Emmanuel_Chiboy_CV.pdf"
             className="inline-flex items-center justify-center gap-2 rounded-lg border border-primary px-6 py-3 text-sm font-semibold text-primary transition-colors hover:bg-primary/10"
           >
