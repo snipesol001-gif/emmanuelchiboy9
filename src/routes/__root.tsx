@@ -77,14 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Emmanuel Chiboy-Website Builder" },
+      { name: "description", content: "Global Showcase is a website that highlights client testimonials from around the world." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Emmanuel Chiboy-Website Builder" },
+      { property: "og:description", content: "Global Showcase is a website that highlights client testimonials from around the world." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Emmanuel Chiboy-Website Builder" },
+      { name: "twitter:description", content: "Global Showcase is a website that highlights client testimonials from around the world." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e44d38c4-c7d4-49dd-986d-6fdd1fe46053/id-preview-44997a9b--078d055a-e361-4bd3-8046-5a138077e145.lovable.app-1780506930325.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e44d38c4-c7d4-49dd-986d-6fdd1fe46053/id-preview-44997a9b--078d055a-e361-4bd3-8046-5a138077e145.lovable.app-1780506930325.png" },
     ],
     links: [
       {
