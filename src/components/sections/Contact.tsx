@@ -53,7 +53,7 @@ export function Contact() {
         <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
           {cards.map((c, i) => (
             <Reveal key={c.label} delay={i * 0.08}>
-              
+              <a
                 href={c.href}
                 target={c.external ? "_blank" : undefined}
                 rel={c.external ? "noreferrer noopener" : undefined}
