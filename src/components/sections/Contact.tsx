@@ -1,5 +1,5 @@
 import { Reveal } from "./Reveal";
-import { Facebook, Mail, MessageCircle } from "lucide-react";
+import { Facebook, Mail, MessageCircle, Linkedin } from "lucide-react";
 
 const WHATSAPP = "https://wa.me/message/N4TYXMFOSNGOC1";
 
@@ -19,6 +19,14 @@ const cards = [
     href: "https://www.facebook.com/emmanuelchiboy001",
     external: true,
     color: "oklch(0.55 0.18 255)",
+  },
+  {
+    icon: Linkedin,
+    label: "Connect on LinkedIn",
+    detail: "Emmanuel Chiboy",
+    href: "https://www.linkedin.com/in/emmanuel-chiboy-633692413",
+    external: true,
+    color: "oklch(0.55 0.18 230)",
   },
   {
     icon: Mail,
@@ -42,11 +50,10 @@ export function Contact() {
             of the options below and let us talk.
           </p>
         </Reveal>
-
-        <div className="mt-14 grid gap-5 md:grid-cols-3">
+        <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
           {cards.map((c, i) => (
             <Reveal key={c.label} delay={i * 0.08}>
-              <a
+              
                 href={c.href}
                 target={c.external ? "_blank" : undefined}
                 rel={c.external ? "noreferrer noopener" : undefined}
@@ -64,7 +71,6 @@ export function Contact() {
             </Reveal>
           ))}
         </div>
-
         <Reveal delay={0.3}>
           <div className="mx-auto mt-12 flex w-fit items-center gap-3 rounded-full border border-white/10 bg-card px-5 py-2.5">
             <span className="pulse-dot h-2.5 w-2.5 rounded-full bg-[oklch(0.72_0.19_150)]" />
